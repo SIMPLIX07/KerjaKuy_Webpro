@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+nav .navbar{
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to  left, #1FACA2, #000E3A);
+    border-radius: 40px;
+    position: relative;
+    padding: 20px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    top: -35px;
+}
+
+.navbar .left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.navbar .left label{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .left label{
+    margin-left: 10px;
+}
+
+.navbar .middle ul {
+  display: flex;           
+  justify-content: center;
+  align-items: center;     
+  gap: 50px;              
+  list-style: none;       
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .middle ul li#lowongan{
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+.navbar .middle ul li#lamaran{
+    color: rgb(206, 202, 202);
+}
+
+.navbar .right{
+    margin-right: 50px;
+}
+
+ul li{
+    display: inline;
+}
+
+nav .left img{
+    height: 53px;
+    width: 37px;
+}
+
+.content .asset img{
+    height: 487px;
+    width: 330px;
+}
+
+.asset {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: -1; /* tetap di belakang isi */
+}
+
+.asset #left{
+    position: relative;
+    bottom: -270px;
+}
+
+.asset #right{
+    position: relative;
+    bottom: -270px;
+}
+
+.back{
+    margin-top: 20px;
+    border-radius: 10px;
+    background-image: url(asset/Background.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    width: 900px;
+}
+
+.isi {
+    display: flex;
+    justify-content: center;
+    height: 100vh; 
+    position: relative;
+    z-index: 1; 
+}
+
+.back img{
+    width: 40px;
+    height: 40px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: 15px;
+}
+
+.profile #perusahaan{
+    font-size: 24px;
+    font-weight: bold;
+}
+.profile #posisi{
+    font-size: 18px;
+}
+
+.seluruh{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    bottom: -30px;
+    left: -300px;
+}
