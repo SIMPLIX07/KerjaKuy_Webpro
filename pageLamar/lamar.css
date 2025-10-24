@@ -80,7 +80,7 @@ nav .left img{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  z-index: -1; /* tetap di belakang isi */
+  z-index: -1; 
 }
 
 .asset #left{
@@ -107,9 +107,8 @@ nav .left img{
 .isi {
     display: flex;
     justify-content: center;
-    height: 100vh; 
     position: relative;
-    z-index: 1; 
+    z-index: 2; 
 }
 
 .back img{
@@ -138,4 +137,87 @@ nav .left img{
     flex-direction: row;
     bottom: -30px;
     left: -300px;
+    padding-bottom: 20px;
 }
+
+.deskripsi{
+    flex-direction: column;
+    background-color: #ffff;
+    border: solid 1px grey;
+    margin: 10px auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 480px;
+    width: 900px;
+    position: relative;
+    z-index: 2; 
+    top: -25px;
+}
+
+.tengah{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.top{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.top img{
+    height: 25px;
+    width: 25px;
+}
+
+.list {
+    margin-top: 8px;
+    list-style-type: disc;   
+    padding-left: 20px;       
+}
+
+.list li {
+    display: list-item;       
+    margin-bottom: 8px;       
+}
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.middle h2{
+    font-size: 24px;
+    margin-top: 10px;
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.bottom h2{
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.button {
+    margin-right: 20px;
+    margin-top: 15px;
+    align-self: flex-end;
+    padding: 10px 20px;
+    border: none;
+    background-color: #1FACA2;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
