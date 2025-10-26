@@ -19,6 +19,8 @@ nav{
     align-items: center;
     margin-left: 50px;
     margin-right: 50px;
+    z-index: 10;
+    position: relative;
 }
 
 nav .left{
