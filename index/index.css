@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,10 +8,11 @@
     color: #FFFFFF;
 }
 
-body{
+body {
     background: linear-gradient(to right, #1FACA2, #000E3A)
 }
-nav{
+
+nav {
     margin-top: 50px;
     color: #FFFFFF;
     display: flex;
@@ -23,58 +24,84 @@ nav{
     position: relative;
 }
 
-nav .left{
+nav .left {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-nav .mid{
+nav .mid {
     margin-left: 80px;
 }
 
-.left img{
+.left img {
     margin-right: 15px;
     width: 35px;
     height: 50px;
 }
 
-ul{
+ul {
     list-style: none;
     padding: 0;
 }
 
-ul li{
+ul li {
     display: inline;
     margin-right: 15px;
 }
 
-ul li a{
+ul li a {
     color: #FFFFFF;
     text-decoration: none;
 }
 
 #login {
-  background: rgba(255, 255, 255, 0.25); 
-  color: white;              
-  padding: 8px 30px;         
-  border-radius: 20px;       
-  text-decoration: none;    
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  cursor: pointer;
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    padding: 8px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    cursor: pointer;
 }
 
-#daftar{
-    background: none; 
-    color: white;              
-    padding: 8px 30px;         
-    border-radius: 20px;       
-    text-decoration: none;    
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    min-width: 120px;
+    backdrop-filter: blur(5px);
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#daftar {
+    background: none;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 20px;
+    text-decoration: none;
     border: none;
     cursor: pointer;
 }
 
-.konten1{
+.konten1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,18 +112,18 @@ ul li a{
     transform: translateY(-50px);
 }
 
-.konten1 h1{
+.konten1 h1 {
     margin-bottom: 15px;
     font-size: 100px;
     font-weight: bold;
 }
 
-.konten1 #isi{
+.konten1 #isi {
     font-size: 20px;
     font-weight: 300;
 }
 
-.konten2{
+.konten2 {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -107,9 +134,9 @@ ul li a{
     z-index: -1;
 }
 
-.konten2 .tentang{
+.konten2 .tentang {
     margin-bottom: 40px;
-    margin-left:100px;
+    margin-left: 100px;
     padding-top: 20px;
     padding-bottom: 90px;
     padding-left: 40px;
@@ -120,27 +147,28 @@ ul li a{
     width: 800px;
     height: 343;
 }
-.konten2 .tentang p{
+
+.konten2 .tentang p {
     margin-top: 30px;
     font-size: 14px;
 }
 
-.konten2 .tentang h2{
+.konten2 .tentang h2 {
     font-size: 40px;
 }
 
-.konten2 .tentang2 p{
+.konten2 .tentang2 p {
     margin-top: 30px;
     font-size: 14px;
 }
 
-.konten2 .tentang2 h2{
+.konten2 .tentang2 h2 {
     font-size: 40px;
 }
 
-.konten2 .tentang2{
+.konten2 .tentang2 {
     margin-bottom: 40px;
-    margin-left:500px;
+    margin-left: 500px;
     padding-top: 20px;
     padding-bottom: 90px;
     padding-left: 40px;
@@ -153,12 +181,10 @@ ul li a{
 }
 
 .end {
-  width: 100%;
-  height: 150px;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,   
-    rgba(0, 0, 0, 0.7) 80%, 
-    rgba(0, 0, 0, 1) 100%   
-  );
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.7) 80%,
+            rgba(0, 0, 0, 1) 100%);
 }
