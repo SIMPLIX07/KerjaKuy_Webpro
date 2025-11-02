@@ -226,3 +226,6 @@ nav .left img{
     cursor: pointer;
 }
 
+.right label a{
+    color: white;
+}

@@ -1,0 +1,272 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    background-color: #F9FAFB;
+    height: 100vh;
+    color: #111827;
+}
+
+.leftBar {
+    width: 280px;
+    background-color: #FFFFFF;
+    padding: 24px;
+    box-sizing: border-box;
+    height: 100%;
+    border-right: 1px solid #E5E7EB;
+    flex-shrink: 0;
+}
+
+.leftBar .header {
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    margin-bottom: 16px;
+}
+
+.leftBar .header .fotoSetting {
+   display: none;
+}
+
+.leftBar .header h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.leftBar hr {
+    border: 0;
+    border-top: 1px solid #E5E7EB;
+    margin: 20px 0;
+}
+
+.barContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.barContent .general::before,
+.barContent .System::before {
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: #6B7280;
+    padding: 0 12px;
+    margin-bottom: 8px;
+}
+
+.barContent .general::before {
+    content: 'GENERAL';
+}
+
+.barContent .System::before {
+    content: 'SYSTEM';
+    margin-top: 16px;
+}
+
+.profil,
+.LogOut {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.profil label,
+.LogOut label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #374151;
+    cursor: pointer;
+}
+
+.iconProfil,
+.iconLogOut {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    background-color: #9CA3AF; 
+    border-radius: 4px;
+}
+
+.profil:not(.active):hover,
+.LogOut:not(.active):hover {
+    background-color: #F3F4F6;
+}
+
+.profil.active,
+.LogOut.active {
+    background-color: #ECFDF5; 
+}
+
+.profil.active label,
+.LogOut.active label {
+    color: #059669;
+    font-weight: 600;
+}
+
+.profil.active .iconProfil,
+.LogOut.active .iconLogOut {
+    background-color: #059669;
+}
+
+.rightBar {
+    padding: 24px;
+    flex-grow: 1;
+}
+
+.rightBar {
+    padding: 24px 32px;
+    flex-grow: 1;
+    background-color: #F9FAFB;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.rightBar h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #111827;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.rightBar hr {
+    border: 0;
+    border-top: 1px solid #E5E7EB;
+    margin-bottom: 24px;
+}
+
+.profilPicture {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.profilPicture .left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.profilPicture .pic {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #F0F0F0;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.profilPicture .pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profilPicture .left label {
+    font-size: 15px;
+}
+
+.profilPicture .left label:nth-of-type(1) {
+    font-weight: 600;
+    color: #111827;
+}
+
+.profilPicture .left label:nth-of-type(2) {
+    font-size: 14px;
+    color: #6B7280;
+}
+
+.profilPicture .right button {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+    background-color: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.profilPicture .right button:hover {
+    background-color: #F9FAFB;
+}
+
+.namaLengkap,
+.keahlian,
+.username,
+.password {
+    margin-top: 24px;
+}
+
+.namaLengkap > label,
+.keahlian > label,
+.username > label,
+.password > label {
+    display: block;
+    font-weight: 600;
+    font-size: 15px;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+.inputNama,
+.inputKeahlian,
+.inputUsername,
+.inputPassword {
+    position: relative;
+}
+
+.inputNama input,
+.inputKeahlian input,
+.inputUsername input,
+.inputPassword input {
+    width: 100%;
+    padding: 12px 16px;
+    padding-right: 45px; 
+    font-size: 15px;
+    color: #111827;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.inputNama input:focus,
+.inputKeahlian input:focus,
+.inputUsername input:focus,
+.inputPassword input:focus {
+    outline: none;
+    border-color: #2563EB;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.editPic {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+}
+
+.editPic:hover {
+    opacity: 1;
+}
+
+.editPic img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
