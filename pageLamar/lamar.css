@@ -72,7 +72,31 @@ nav .left img{
     width: 37px;
 }
 
+.content .asset img{
+    height: 487px;
+    width: 330px;
+}
 
+.asset {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: -1; 
+}
+
+.asset #left{
+    position: relative;
+    bottom: -270px;
+}
+
+.asset #right{
+    position: relative;
+    bottom: -270px;
+}
 
 .back{
     margin-top: 20px;
@@ -85,11 +109,11 @@ nav .left img{
     width: 900px;
 }
 
-.cardTop {
+.isi {
     display: flex;
     justify-content: center;
     position: relative;
-    z-index: 1; 
+    z-index: 2; 
 }
 
 .back img{
@@ -121,7 +145,7 @@ nav .left img{
     padding-bottom: 20px;
 }
 
-.cardDown{
+.deskripsi{
     flex-direction: column;
     background-color: #ffff;
     border: solid 1px grey;
@@ -131,7 +155,7 @@ nav .left img{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 500px;
+    height: 480px;
     width: 900px;
     position: relative;
     z-index: 2; 
@@ -172,7 +196,6 @@ nav .left img{
     flex-direction: column;
     margin-left: 20px;
     margin-top: 10px;
-    margin-right: 20px;
 }
 
 .middle h2{
