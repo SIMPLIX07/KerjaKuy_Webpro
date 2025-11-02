@@ -6,9 +6,10 @@
 
 body {
     font-family: 'Segoe UI';
+    background-color: #f8f9fa;
 }
 
-.cstm-navbar {
+.navbar {
     background: linear-gradient(90deg, #00193f, #16b3a3);
     padding: 14px 0;
     position: sticky;
@@ -16,7 +17,7 @@ body {
     z-index: 1000;
 }
 
-.cstm-nav-container {
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,13 +43,13 @@ body {
     font-size: 30px;
 }
 
-.cstm-nav-menu {
+.nav-menu {
     display: flex;
     align-items: center;
     gap: 60px;
 }
 
-.cstm-nav-link {
+.nav-link {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 22px;
@@ -57,7 +58,7 @@ body {
     transition: color 0.3s;
 }
 
-.cstm-nav-link.active::after {
+.nav-link.active::after {
     content: "";
     position: absolute;
     bottom: -6px;
@@ -67,17 +68,17 @@ body {
     background-color: white;
 }
 
-.cstm-nav-link:hover {
-    color: rgb(164, 229, 14);
+.nav-link:hover {
+    color: rgb(229, 204, 14);
 }
 
-.cstm-nav-user {
+.nav-user {
     color: white;
     font-weight: 450;
     font-size: 22px;
 }
 
-/* Navbar bawah */
+/* search bar */
 .search-bar-container {
     background: linear-gradient(90deg, #00193f, #16b3a3);
     display: flex;
@@ -93,18 +94,18 @@ body {
     display: flex;
     align-items: center;
     background-color: white;
-    border-radius: 30px;
+    border-radius: 15px;
     overflow: hidden;
     width: 60%;
     max-width: 600px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-.search-input {
+.search-input{
     flex: 1;
     border: none;
     outline: none;
-    padding: 10px 16px;
+    padding: 15px 16px;
     font-size: 15px;
     color: #333;
 }
@@ -113,10 +114,10 @@ body {
     background-color: #16b3a3;
     color: white;
     border: none;
-    padding: 10px 24px;
+    padding: 15px 24px;
     cursor: pointer;
     font-size: 15px;
-    border-radius: 0 30px 30px 0;
+    border-radius: 0 15px 15px 0;
     transition: background-color 0.3s;
 }
 
@@ -124,5 +125,84 @@ body {
     background-color: #109485;
 }
 
+/* Container untuk card - DIUBAH */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
 
 
+/* Card */
+.card {
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 160px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+.card-perusahaan {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #888;
+    margin-bottom: 12px;
+}
+
+.card-text {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* status */
+.status {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+}
+
+/* warna status lamaran */
+.status.diterima {
+    background-color: #28AE9D;
+}
+
+.status.ditolak {
+    background-color: #AE2828;
+}
+
+.status.diproses {
+    background-color: #EDB02D; 
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}

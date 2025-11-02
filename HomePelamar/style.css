@@ -68,7 +68,7 @@ body {
 }
 
 .cstm-nav-link:hover {
-    color: rgb(164, 229, 14);
+    color: rgb(255, 227, 17);
 }
 
 .cstm-nav-user {
@@ -114,6 +114,7 @@ body {
 
 .search-button {
     background-color: #16b3a3;
+    
     color: white;
     border: none;
     padding: 10px 24px;

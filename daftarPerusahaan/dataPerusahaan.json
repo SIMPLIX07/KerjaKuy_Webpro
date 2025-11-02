@@ -2,6 +2,7 @@
     "perusahaan": [
         {
             "nama": "PT. Grab Indonesia",
+            "posisi": "Management",
             "logo": "asset/logoGrab.png",
             "lokasi": "Jakarta Pusat, Jakarta Raya",
             "lowongan": [
@@ -29,6 +30,7 @@
         {
             "nama": "PT. Gojek Indonesia",
             "logo": "asset/logoGojek.png",
+            "posisi": "Asistent Manager",
             "lokasi": "Jakarta Selatan, Jakarta Raya",
             "lowongan": [
                 {
