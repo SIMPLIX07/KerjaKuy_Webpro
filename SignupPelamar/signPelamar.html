@@ -3,26 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Sign Up Pelamar</title>
     <link rel="stylesheet" href="signPelamar.css">
 </head>
 <body>
     <div class="container">
-        <h2>Sign Up Pelamar</h2>
-        <div class="username">
-            <label for="username">Username</label>
-            <input type="text" name="" id="usn" placeholder=" Masukan Username">
-        </div>
-        <div class="password">
-            <label for="password">Password</label>
-            <input type="text" name="" id="pass" placeholder=" Masukan Password">
-        </div>
-        <div class="link">
-            <label for="forgot" id="forgot"><a href="">Lupa password?</a></label>
-            <label for="register" id="register"><a href="">Belum punya akun?</a></label>
-        </div>
-        <button type="submit" id="next">Lanjut</button>
+    <h2>Sign Up Pelamar</h2>    
+    <div class="form-group">
+        <label for="fullname">Nama Lengkap</label>
+        <input type="text" id="fullname" placeholder="Masukkan Nama Lengkap">
     </div>
+    <div class="form-group">
+        <label for="usn">Username</label>
+        <input type="text" id="usn" placeholder="Masukkan Username">
+    </div>
+    <div class="form-group">
+        <label for="pass">Password</label>
+        <input type="password" id="pass" placeholder="Masukkan Password">
+    </div>
+    <div class="form-group">
+        <label for="skills">Keahlian</label>
+        <input type="text" id="skills" placeholder="Masukkan Keahlian (pisahkan dengan koma)">
+    </div>
+    <button type="submit" id="next">Lanjut</button>
+</div>
+
     <script src="signPelamar.js"></script>
 </body>
 </html>
