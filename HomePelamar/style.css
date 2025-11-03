@@ -76,6 +76,7 @@ body {
 .cstm-nav-user {
     color: white;
     font-weight: 450;
+    text-decoration: none;
     font-size: 22px;
 }
 
