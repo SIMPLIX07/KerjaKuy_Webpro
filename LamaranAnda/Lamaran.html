@@ -1,45 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KerjaKuy</title>
-    <link rel="stylesheet" href="Lamaran.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KerjaKuy</title>
+  <link rel="stylesheet" href="Lamaran.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="asset/KerjaKuy.png" alt="Kerjakuy Logo" class="logo-img">
-                <span class="brand-text">KerjaKuy</span>
-            </div>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="asset/KerjaKuy.png" alt="Kerjakuy Logo" class="logo-img">
+        <span class="brand-text">KerjaKuy</span>
+      </div>
 
-            <div class="nav-menu">
-                <a href="../HomePelamar/index.html" class="nav-link">Lowongan Kerja</a>
-                <a href="../LamaranAnda/Lamaran.html" class="nav-link active">Lamaran anda</a>
-            </div>
+      <div class="nav-menu">
+        <a href="../HomePelamar/index.html" class="nav-link">Lowongan Kerja</a>
+        <a href="../LamaranAnda/Lamaran.html" class="nav-link active">Lamaran Anda</a>
+      </div>
 
-            <div class="nav-user">
-                <span class="user-margin">Muhammad Salman Al Farizy</span>
-            </div>
-        </div>
-    </nav>
+      <div class="nav-user">
+        <span class="cstm-user-margin">Muhammad Salman Al Farizy</span>
+      </div>
+    </div>
+  </nav>
 
-    <div class="search-bar-container">
-        <div class="search-bar">
-            <input type="text" placeholder="Cari pekerjaan yang dilamar" class="search-input">
-            <button class="search-button">Cari</button>
-        </div>
+  <!-- SEARCH BAR -->
+  <div class="search-bar-container">
+    <div class="search-bar">
+      <input type="text" placeholder="Cari pekerjaan yang dilamar" class="search-input">
+      <button class="search-button">Cari</button>
+    </div>
+  </div>
 
+  <!-- ISI UTAMA -->
+  <div class="lamaran-wrapper">
+    <div class="cards-container" id="cardsContainer">
+      <!-- Card akan diisi lewat JS -->
     </div>
 
-    
-
-    <div class="cards-container">
-        
+    <div class="kelola-wrapper">
+      <button class="kelola-btn" onclick="window.location.href='Kelola.html'">Kelola</button>
     </div>
+  </div>
 
-    <script src="Lamaran.js"></script>
+  <script src="Lamaran.js"></script>
 </body>
 </html>
