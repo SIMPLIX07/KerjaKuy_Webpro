@@ -1,28 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="signPerusahaan.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kerja Kuy</title>
+    <link rel="stylesheet" href="signPerusahaan.css" />
+  </head>
+  <body>
     <div class="container">
-        <h2>Sign Up Pelamar</h2>
-        <div class="username">
-            <label for="username">Username</label>
-            <input type="text" name="" id="usn" placeholder=" Masukan Username">
-        </div>
-        <div class="password">
-            <label for="password">Password</label>
-            <input type="text" name="" id="pass" placeholder=" Masukan Password">
-        </div>
-        <div class="link">
-            <label for="forgot" id="forgot"><a href="">Lupa password?</a></label>
-            <label for="register" id="register"><a href="">Belum punya akun?</a></label>
-        </div>
-        <button type="submit" id="next">Lanjut</button>
+      <h2>Sign Up Perusahaan</h2>
+      <div class="username">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          name=""
+          id="usn"
+          class="form_input"
+          placeholder=" Masukan Username"
+        />
+      </div>
+      <div class="username">
+        <label for="username">Email</label>
+        <input
+          type="email"
+          name=""
+          id="usn"
+          class="form_input"
+          placeholder=" Masukan Email"
+        />
+      </div>
+      <div class="password">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name=""
+          id="pass"
+          class="form_input"
+          placeholder=" Masukan Password"
+        />
+      </div>
+      <div class="uploadSertif">
+        <label for="fileInput">Sertifikat Perusahaan</label>
+        <label class="upload-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M7 16a4 4 0 01-.88-7.903A5 5 0 1117 9a3 3 0 013 3 3 3 0 01-3 3H7z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 12v9m0 0l-3-3m3 3l3-3"
+            />
+          </svg>
+          Upload File
+          <input type="file" hidden id="fileInput" />
+        </label>
+      </div>
+
+      <div class="link">
+        <label for="forgot" id="forgot"><a href="">Lupa password?</a></label>
+        <label for="register" id="register"
+          ><a href="">Sudah punya akun?</a></label
+        >
+      </div>
+      <button type="submit" id="next">Lanjut</button>
     </div>
     <script src="signPerusahaan.js"></script>
-</body>
+  </body>
 </html>
