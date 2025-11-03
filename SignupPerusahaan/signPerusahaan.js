@@ -1,5 +1,6 @@
 document.getElementById("next").onclick = function () {
   const username = document.getElementById("usn").value;
+  const email = document.getElementById("email").value;
   const password = document.getElementById("pass").value;
   const fileInput = document.getElementById("fileInput");
   const file = fileInput.files[0];
