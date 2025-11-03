@@ -9,60 +9,24 @@ body {
 
 .leftBar {
     width: 280px;
-    background-color: #FFFFFF;
+    background: linear-gradient(to bottom, #1FACA2, #000E3A);
     padding: 24px;
     box-sizing: border-box;
     height: 100%;
-    border-right: 1px solid #E5E7EB;
+    border-right: 1px solid #1FACA2;
     flex-shrink: 0;
-}
-
-.leftBar .header {
-    display: flex;
-    align-items: center;
-    padding-left: 12px;
-    margin-bottom: 16px;
-}
-
-.leftBar .header .fotoSetting {
-   display: none;
 }
 
 .leftBar .header h2 {
     font-size: 20px;
     font-weight: 600;
     margin: 0;
-}
-
-.leftBar hr {
-    border: 0;
-    border-top: 1px solid #E5E7EB;
-    margin: 20px 0;
-}
-
-.barContent {
-    display: flex;
-    flex-direction: column;
+    color: #FFFFFF;
 }
 
 .barContent .general::before,
 .barContent .System::before {
-    display: block;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 600;
-    color: #6B7280;
-    padding: 0 12px;
-    margin-bottom: 8px;
-}
-
-.barContent .general::before {
-    content: 'GENERAL';
-}
-
-.barContent .System::before {
-    content: 'SYSTEM';
-    margin-top: 16px;
+    color: #E0FDFC;
 }
 
 .profil,
@@ -73,15 +37,14 @@ body {
     border-radius: 6px;
     margin-bottom: 4px;
     cursor: pointer;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    transition: background-color 0.2s ease;
 }
 
 .profil label,
 .LogOut label {
     font-size: 15px;
     font-weight: 500;
-    color: #374151;
-    cursor: pointer;
+    color: #FFFFFF;
 }
 
 .iconProfil,
@@ -89,19 +52,31 @@ body {
     width: 20px;
     height: 20px;
     margin-right: 12px;
-    background-color: #9CA3AF; 
+    background-color: rgba(255,255,255,0.4);
     border-radius: 4px;
 }
 
-.profil:not(.active):hover,
-.LogOut:not(.active):hover {
-    background-color: #F3F4F6;
+.profil:hover:not(.active),
+.LogOut:hover:not(.active) {
+    background-color: rgba(255,255,255,0.15);
 }
 
 .profil.active,
 .LogOut.active {
-    background-color: #ECFDF5; 
+    background-color: #FFFFFF;
 }
+
+.profil.active label,
+.LogOut.active label {
+    color: #000E3A;
+    font-weight: 600;
+}
+
+.profil.active .iconProfil,
+.LogOut.active .iconLogOut {
+    background-color: #1FACA2;
+}
+
 
 .profil.active label,
 .LogOut.active label {
@@ -269,4 +244,9 @@ body {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.back img{
+    width: 40px;
+    height: 40px;
 }

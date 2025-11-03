@@ -19,34 +19,43 @@ document.addEventListener("DOMContentLoaded", async function () {
     `;
 
     jobContainer.innerHTML = `
-        <div class="top">
-            <div class="tengah">
-                <img src="asset/gaji.png" alt="">
-                <label>${lowongan.gaji.mata_uang} ${lowongan.gaji.min.toLocaleString()} - ${lowongan.gaji.max.toLocaleString()}</label>
-            </div>
-            <div class="tengah">
-                <img src="asset/waktu.png" alt="">
-                <label>${lowongan.tipe_pekerjaan}</label>
-            </div>
-            <div class="tengah">
-                <img src="asset/lokasi.png" alt="">
-                <label>${perusahaan.lokasi}</label>
-            </div>
+    <div class="top">
+        <div class="tengah">
+            <img src="asset/gaji.png" alt="">
+            <label>${lowongan.gaji.mata_uang} ${lowongan.gaji.min.toLocaleString()} - ${lowongan.gaji.max.toLocaleString()}</label>
         </div>
-        <div class="middle">
-            <h2>Deskripsi Pekerjaan</h2>
-            <ul class="list">
-                ${lowongan.deskripsi_pekerjaan.map(d => `<li>${d}</li>`).join('')}
-            </ul>
+        <div class="tengah">
+            <img src="asset/waktu.png" alt="">
+            <label>${lowongan.tipe_pekerjaan}</label>
         </div>
-        <div class="bottom">
-            <h2>Syarat</h2>
-            <ul class="list">
-                ${lowongan.syarat.map(s => `<li>${s}</li>`).join('')}
-            </ul>
+        <div class="tengah">
+            <img src="asset/lokasi.png" alt="">
+            <label>${perusahaan.lokasi}</label>
         </div>
+    </div>
+
+    <div class="middle">
+        <h2>Deskripsi Pekerjaan</h2>
+        <ul class="list">
+            ${lowongan.deskripsi_pekerjaan.map(d => `<li>${d}</li>`).join('')}
+        </ul>
+    </div>
+
+    <div class="bottom">
+        <h2>Syarat</h2>
+        <ul class="list">
+            ${lowongan.syarat.map(s => `<li>${s}</li>`).join('')}
+        </ul>
+    </div>
+
+    <div class="actionButtons">
+        <a href="../HomePelamar/index.html">
+            <button class="button backBtn">Back</button>
+        </a>
         <button class="button">Lamar</button>
-    `;
+    </div>
+`;
+
 
     const buttonLamar = document.querySelector('.button');
     buttonLamar.addEventListener('click', async function () {

@@ -46,7 +46,6 @@ nav .navbar{
 }
 
 .navbar .middle ul li#lowongan{
-    border-bottom: 2px solid white;
     padding-bottom: 10px;
 }
 
@@ -63,7 +62,7 @@ ul li{
 }
 
 a{
-    color: grey;
+    color: white;
     text-decoration: none;
 }
 
@@ -155,7 +154,7 @@ nav .left img{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 480px;
+    height: 500px;
     width: 900px;
     position: relative;
     z-index: 2; 
@@ -228,4 +227,18 @@ nav .left img{
 
 .right label a{
     color: white;
+}
+
+
+.actionButtons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.actionButtons a {
+    text-decoration: none;
 }
