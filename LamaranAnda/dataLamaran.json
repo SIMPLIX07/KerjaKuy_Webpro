@@ -2,11 +2,11 @@
   "userPelamar": [
     {
       "id": "1",
-      "username": "Angga Rizky",
+      "username": "Muhammad Salman",
       "lamaran": [
         {
           "posisiLamaran": "Frontend Developer",
-          "perusahaan": "PT Teknologi Nusantara",
+          "perusahaan": "PT Nusantara",
           "status": "Diterima"
         },
         {
@@ -20,121 +20,30 @@
           "status": "Ditolak"
         },
         {
-          "posisiLamaran": "Frontend Developer",
-          "perusahaan": "Telkomsel",
+          "posisiLamaran": "Asisten Manager",
+          "perusahaan": "PT Antam",
+          "status": "Ditolak"
+        },
+        {
+          "posisiLamaran": "Manager",
+          "perusahaan": "Atlas",
           "status": "Ditolak"
         },
         {
           "posisiLamaran": "Backend Developer",
-          "perusahaan": "Tokopedia",
-          "status": "Ditolak"
-        },
-        {
-          "posisiLamaran": "Asissten Manager",
-          "perusahaan": "PT ANTAM",
-          "status": "Ditolak"
-        },
-        {
-          "posisiLamaran": "Asissten Manager",
-          "perusahaan": "PT ANTAM",
-          "status": "Ditolak"
-        },
-        {
-          "posisiLamaran": "Asissten Manager",
-          "perusahaan": "PT ANTAM",
-          "status": "Ditolak"
-        },
-        {
-          "posisiLamaran": "Asissten Manager",
-          "perusahaan": "PT ANTAM",
-          "status": "Ditolak"
-        },
-        {
-          "posisiLamaran": "Asissten Manager",
-          "perusahaan": "PT ANTAM",
-          "status": "Ditolak"
-        },
-        {
-          "posisiLamaran": "Asissten Manager",
-          "perusahaan": "PT ANTAM",
-          "status": "Ditolak"
-        },
-        {
-          "posisiLamaran": "Asissten Manager",
-          "perusahaan": "PT ANTAM",
-          "status": "Ditolak"
-        },
-        {
-          "posisiLamaran": "Asissten Manager",
-          "perusahaan": "PT ANTAM",
-          "status": "Ditolak"
-        },
-        {
-          "posisiLamaran": "Asissten Manager",
-          "perusahaan": "PT ANTAM",
-          "status": "Ditolak"
-        },
-        {
-          "posisiLamaran": "Asissten Manager",
-          "perusahaan": "PT ANTAM",
-          "status": "Ditolak"
-        },
-        {
-          "posisiLamaran": "Asissten Manager",
-          "perusahaan": "PT ANTAM",
-          "status": "Ditolak"
-        },
-        {
-          "posisiLamaran": "Asissten Manager",
-          "perusahaan": "PT ANTAM",
-          "status": "Ditolak"
-        },
-        {
-          "posisiLamaran": "Asissten Manager",
-          "perusahaan": "PT ANTAM",
-          "status": "Ditolak"
-        },
-        {
-          "posisiLamaran": "Asissten Manager",
-          "perusahaan": "PT ANTAM",
-          "status": "Ditolak"
-        },
-        {
-          "posisiLamaran": "Asissten Manager",
-          "perusahaan": "PT ANTAM",
-          "status": "Ditolak"
-        },
-        {
-          "posisiLamaran": "Asissten Manager",
-          "perusahaan": "PT ANTAM",
+          "perusahaan": "Telkomsel",
           "status": "Ditolak"
         }
       ]
     },
     {
       "id": "2",
-      "username": "Rafi",
+      "username": "Angga Rizky",
       "lamaran": [
         {
           "posisiLamaran": "Software Engineer Intern",
           "perusahaan": "PT Code Academy",
           "status": "Diproses"
-        },
-        {
-          "posisiLamaran": "Data Analyst",
-          "perusahaan": "PT Data Insight",
-          "status": "Diterima"
-        }
-      ]
-    },
-    {
-      "id": "3",
-      "username": "Rafi",
-      "lamaran": [
-        {
-          "posisiLamaran": "Manager",
-          "perusahaan": "PT ANTAM",
-          "status": "Ditolak"
         },
         {
           "posisiLamaran": "Data Analyst",

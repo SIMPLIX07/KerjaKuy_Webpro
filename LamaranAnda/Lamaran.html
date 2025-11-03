@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,6 @@
 </head>
 
 <body>
-  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="nav-container">
       <div class="nav-logo">
@@ -22,12 +22,11 @@
       </div>
 
       <div class="nav-user">
-        <span class="cstm-user-margin">Muhammad Salman Al Farizy</span>
+        <span class="user-margin"><a class="nav-user" href="../menuSettings/setting.html">Muhammad Salman</a></span>
       </div>
     </div>
   </nav>
 
-  <!-- SEARCH BAR -->
   <div class="search-bar-container">
     <div class="search-bar">
       <input type="text" placeholder="Cari pekerjaan yang dilamar" class="search-input">
@@ -35,11 +34,8 @@
     </div>
   </div>
 
-  <!-- ISI UTAMA -->
   <div class="lamaran-wrapper">
-    <div class="cards-container" id="cardsContainer">
-      <!-- Card akan diisi lewat JS -->
-    </div>
+    <div class="cards-container" id="cardsContainer"></div>
 
     <div class="kelola-wrapper">
       <button class="kelola-btn" onclick="window.location.href='Kelola.html'">Kelola</button>
@@ -48,4 +44,5 @@
 
   <script src="Lamaran.js"></script>
 </body>
+
 </html>
